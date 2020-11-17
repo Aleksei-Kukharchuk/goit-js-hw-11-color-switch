@@ -16,9 +16,9 @@ function randomIntegerFromInterval(min, max) {
 }
 
 startButton.addEventListener('click', () => { 
+    startButton.disabled = 'true';
     bodyColorChangerIntervsl = setInterval(() => {
       body.style.backgroundColor = colors[randomIntegerFromInterval(0, colors.length)];
-      startButton.disabled = 'true';
   }, 1000);
 });
 
